@@ -1,0 +1,12 @@
+name: test
+on: [push]
+
+name: "Test"
+jobs:
+  run:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v1
+      
+      - run: |
+        ./propagationChecker.sh -c A aorfanos.com
