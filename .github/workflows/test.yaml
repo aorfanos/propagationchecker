@@ -8,7 +8,7 @@ jobs:
       matrix:
         domains: 
           - "aorfanos.com"
-          - "in.gr"
+          - "saikolab.com"
 
     steps:
       - uses: actions/checkout@v1
