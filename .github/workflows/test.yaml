@@ -4,6 +4,12 @@ on: [push]
 jobs:
   run:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        domains: 
+          - "aorfanos.com"
+          - "in.gr"
+
     steps:
       - uses: actions/checkout@v1
       
